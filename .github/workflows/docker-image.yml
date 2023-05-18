@@ -1,0 +1,65 @@
+# name: Build Docker Image and Deploy to ACR & AKS
+
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+
+# jobs:
+
+#   build:
+
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Build the Docker image
+#       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+# jobs:
+#   build-and-push:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
+
+#     - name: Set up Docker Buildx
+#       uses: docker/setup-buildx-action@v1
+
+#     - name: Log in to ACR
+#       uses: docker/login-action@v1
+#       with:
+#         registry: <ACR_NAME>.azurecr.io
+#         username: <ACR_USERNAME>
+#         password: <ACR_PASSWORD>
+
+#     - name: Build and push Docker image
+#       uses: docker/build-push-action@v2
+#       with:
+#         context: .
+#         push: true
+#         tags: <ACR_NAME>.azurecr.io/your-image-name:latest
+
+#   deploy-to-aks:
+#     needs: build-and-push
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout code
+#       uses: actions/checkout@v2
+
+#     - name: Install and configure kubectl
+#       run: |
+#         VERSION=$(curl --silent https://storage.googleapis.com/kubernetes-release/release/stable.txt)
+#         curl https://storage.googleapis.com/kubernetes-release/release/$VERSION/bin/linux/amd64/kubectl \
+#           --progress-bar \
+#           --location \
+#           --remote-name
+#         chmod +x kubectl
+#         sudo mv kubectl /usr/local/bin/
+#         echo "<KUBECONFIG_CONTENT>" | base64 --decode > kubeconfig.yaml
+
+#     - name: Deploy to AKS
+#       run: |
+#         kubectl apply -f deployment.yaml --kubeconfig kubeconfig.yaml
+#         kubectl rollout status deployment/your-deployment-name --kubeconfig kubeconfig.yaml
