@@ -4,6 +4,10 @@
 # SCA-Project
 This is my project submission for the SCA Cloud School Bootcamp Cohort 4 program.
 
+
+## Project Overview
+This project is focused on the containerization and deployment of a container to Azure Cloud Platform.
+
 Tools Used
 ==========
 
@@ -17,50 +21,6 @@ Tools Used
 | Azure Monitor | Collects and analyzes telemetry data from Container Insights and Log Analytics |
 | Container Insights | Monitors performance and health of containerized applications within AKS |
 | Log Analytics | Provides a centralized storage and management location for log data collected by Azure Monitor and AKS cluster |
-
-
-## Project Overview
-This project is focused on the containerization and deployment of a container to Azure Cloud Platform.
-
-It is built with the following tools and services:
-<table>
-  <tr>
-    <th>Tools & Services</th>
-    <th>Application</th>
-  </tr>
-  <tr>
-    <td>Docker</td>
-    <td>Containerizes the Docker Image</td>
-  </tr>
-  <tr>
-    <td>Terraform</td>
-    <td>Automates the provisioning of Infrastructure on Azure</td>
-  </tr>
-  <tr>
-    <td>Azure Container Registry (ACR)</td>
-    <td>Hosts the container image in a repository</td>
-  </tr>
-  <tr>
-    <td>Azure Kubernetes Service (AKS)</td>
-    <td>Enables container execution in the Kubernetes cluster it provides</td>
-  </tr>
-  <tr>
-    <td>GitHub Actions</td>
-    <td>Provides workflows that automate the process of building, testing, and deploying code </td>
-  </tr>
-  <tr>
-    <td>Azure Monitor</td>
-    <td>Collects and analyzes telemetry data from Container Insights and Log Analytics</td>
-  </tr>
-  <tr>
-    <td>Container Insights</td>
-    <td>Monitors performance and health of containerized applications within AKS </td>
-  </tr>
-  <tr>
-    <td>Log Analytics</td>
-    <td>Provides a centralized storage and management location for log data collected by Azure Monitor and AKS cluster </td>
-  </tr>
-</table> 
 
 
 ## Setup the Application on your Local
