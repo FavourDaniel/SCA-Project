@@ -1,3 +1,4 @@
+![CI](https://github.com/FavourDaniel/sca-project/workflow.yml/badge.svg)
 # SCA-Project
 This is my project submission for the SCA Cloud School Bootcamp Cohort 4 program.
 
