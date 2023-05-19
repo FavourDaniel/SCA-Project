@@ -1,8 +1,10 @@
-// testServer.js
-const app = require('./server');
-const http = require('http');
+const express = require('express');
+const app = express();
 
-const testServer = http.createServer(app);
-testServer.listen(() => console.log('Test server is running'));
+// Add your routes and middlewares here
+// For example:
+// const someRoutes = require('./routes/someRoutes');
+// app.use(someRoutes);
 
+const testServer = app.listen(0); // Listen on a random available port for testing
 module.exports = testServer;
