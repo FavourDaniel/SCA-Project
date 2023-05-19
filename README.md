@@ -7,10 +7,10 @@ This is my project submission for the SCA Cloud School Bootcamp Cohort 4 program
 Tools Used
 ==========
 
-| Tools | Usage |
+| Tools & Services | Usage |
 | ------- | ------- |
-| GoRouter | Navigation |
-| Riverpod | State Management |
+| Docker | Containerizes the Docker Image |
+| Terraform | Automates the provisioning of Infrastructure on Azure |
 | Firebase | Backend Service |
 
 
