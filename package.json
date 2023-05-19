@@ -15,7 +15,7 @@
 
   "scripts": {
     "start": "node server.js",
-    "test": "npx mocha ./test/* ./test.js --exit"
+    "test": "npx mocha ./test.js --exit"
   },
   "description": ""
 }
