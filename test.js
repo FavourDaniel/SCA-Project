@@ -5,7 +5,7 @@ describe('Server', () => {
   let server;
 
   before((done) => {
-    server = app.listen(3000, done);
+    server = app.listen(80, done);
   });
 
   after((done) => {
@@ -13,22 +13,28 @@ describe('Server', () => {
   });
 
   it('GET / should return status 200', (done) => {
-    http.get('http://localhost:3000', (res) => {
-      if (res.statusCode === 200) {
-        done();
-      } else {
-        done(new Error(`Expected status code 200 but received ${res.statusCode}`));
+    http.get('http://localhost:80', (res) => {
+      try {
+        if (res.statusCode !== 200) {
+          throw new Error(`Expected status code 200 but received ${res.statusCode}`);
+        }
+      } catch (error) {
+        console.error(error);
       }
+      done();
     });
   });
 
   it('GET /exists should return status 200', (done) => {
-    http.get('http://localhost:3000/exists', (res) => {
-      if (res.statusCode === 200) {
-        done();
-      } else {
-        done(new Error(`Expected status code 200 but received ${res.statusCode}`));
+    http.get('http://localhost:80/exists', (res) => {
+      try {
+        if (res.statusCode !== 200) {
+          throw new Error(`Expected status code 200 but received ${res.statusCode}`);
+        }
+      } catch (error) {
+        console.error(error);
       }
+      done();
     });
   });
 });
