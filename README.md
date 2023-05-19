@@ -8,9 +8,6 @@ This is my project submission for the SCA Cloud School Bootcamp Cohort 4 program
 ## Project Overview
 This project is focused on the containerization and deployment of a container to Azure Cloud Platform.
 
-Tools Used
-==========
-
 | Tools & Services | Usage |
 | ------- | ------- |
 | Docker | Containerizes the Docker Image |
