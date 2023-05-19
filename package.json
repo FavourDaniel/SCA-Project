@@ -9,7 +9,8 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "mocha": "^9.2.2"
+    "mocha": "^9.2.2",
+    "supertest": "^6.1.4"
   },
   "scripts": {
     "start": "node server.js",
