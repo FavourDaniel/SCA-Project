@@ -16,7 +16,8 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: scademo
-        image: scacontainerregistry.azurecr.io/scaproject
+        image: scacontainerregistry.azurecr.io/scaproject:v1
+        imagePullPolicy: IfNotPresent
         resources:
           requests:
             cpu: 100m 
@@ -32,6 +33,8 @@ spec:
         volumeMounts:
         - mountPath: /app/feedback
           name: scademo-pvc
+      imagePullSecrets:
+       - name: acr-secret    
       volumes:
       - name: scademo-pvc
         persistentVolumeClaim:
