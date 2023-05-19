@@ -37,7 +37,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: false
-        tags: ${{ secrets.ACR_REGISTRY_NAME }}.azurecr.io/mydemoapp:${{ github.sha }}
+        tags: mydemoapp:${{ github.sha }}
 
     - name: Push Docker image to Azure Container Registry
       run: |
