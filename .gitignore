@@ -1,11 +1,12 @@
 node_modules/
 
 # Local .terraform directories
-**/.terraform/*
+.terraform*
 
 # .tfstate files
-*.tfstate
-*.tfstate.*
+.tfstate
+.tfstate.
 
+# Lock file
 .terraform.lock.hcl
 .terraform.tfstate.lock.info
