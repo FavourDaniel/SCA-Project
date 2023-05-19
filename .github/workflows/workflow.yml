@@ -37,4 +37,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: mydemoapp:${{ github.sha }}
+        tags: ${{ secrets.ACR_REGISTRY_NAME }}.azurecr.io/myrepository:${{ github.sha }}
