@@ -5,7 +5,7 @@ describe('Server', () => {
   let server;
 
   before((done) => {
-    server = app.listen(80, done);
+    server = app.listen(3000, done);
   });
 
   after((done) => {
@@ -13,7 +13,7 @@ describe('Server', () => {
   });
 
   it('GET / should return status 200', (done) => {
-    http.get('http://localhost:80', (res) => {
+    http.get('http://localhost:3000', (res) => {
       if (res.statusCode === 200) {
         done();
       } else {
@@ -23,7 +23,7 @@ describe('Server', () => {
   });
 
   it('GET /exists should return status 200', (done) => {
-    http.get('http://localhost:80/exists', (res) => {
+    http.get('http://localhost:3000/exists', (res) => {
       if (res.statusCode === 200) {
         done();
       } else {
