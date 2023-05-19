@@ -1,8 +1,7 @@
 node_modules/
 
 # Local .terraform directories
-terraform-infrastructure/.terraform/*
-
+terraform-infrastructure/.terraform/providers/registry.terraform.io/hashicorp/azurerm/3.56.0/linux_amd64/terraform-provider-azurerm_v3.56.0_x5
 
 # .tfstate files
 *.tfstate
