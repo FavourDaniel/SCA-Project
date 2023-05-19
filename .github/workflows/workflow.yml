@@ -19,7 +19,7 @@ jobs:
         node-version: 16
 
     - name: Install dependencies
-      run: npm install express
+      run: npm ci
 
     - name: Run tests
       run: npm test
