@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "mocha ./test/* ./test.js --exit"
+    "test": "npx mocha ./*.js --exit"
   },
   "description": ""
 }
