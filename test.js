@@ -14,27 +14,21 @@ describe('Server', () => {
 
   it('GET / should return status 200', (done) => {
     http.get('http://localhost:80', (res) => {
-      try {
-        if (res.statusCode !== 200) {
-          throw new Error(`Expected status code 200 but received ${res.statusCode}`);
-        }
-      } catch (error) {
-        console.error(error);
+      if (res.statusCode === 200) {
+        done();
+      } else {
+        done(new Error(`Expected status code 200 but received ${res.statusCode}`));
       }
-      done();
     });
   });
 
   it('GET /exists should return status 200', (done) => {
     http.get('http://localhost:80/exists', (res) => {
-      try {
-        if (res.statusCode !== 200) {
-          throw new Error(`Expected status code 200 but received ${res.statusCode}`);
-        }
-      } catch (error) {
-        console.error(error);
+      if (res.statusCode === 200) {
+        done();
+      } else {
+        done(new Error(`Expected status code 200 but received ${res.statusCode}`));
       }
-      done();
     });
   });
 });
