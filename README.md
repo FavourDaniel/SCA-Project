@@ -1,4 +1,5 @@
-![CI](https://github.com/FavourDaniel/sca-project/github/workflow.yml/badge.svg)
+[![Actions Status](https://github.com/FavourDaniel/SCA-Project/actions/workflows/workflow.yml/badge.svg)]
+
 # SCA-Project
 This is my project submission for the SCA Cloud School Bootcamp Cohort 4 program.
 
