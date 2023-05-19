@@ -18,6 +18,9 @@ jobs:
       with:
         node-version: 16
 
+    - name: Print user
+      run: whoami
+
     - name: Install dependencies
       run: sudo npm ci
 
