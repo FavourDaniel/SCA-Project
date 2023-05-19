@@ -4,6 +4,16 @@
 # SCA-Project
 This is my project submission for the SCA Cloud School Bootcamp Cohort 4 program.
 
+Tools Used
+==========
+
+| Tools | Usage |
+| ------- | ------- |
+| GoRouter | Navigation |
+| Riverpod | State Management |
+| Firebase | Backend Service |
+
+
 ## Project Overview
 This project is focused on the containerization and deployment of a container to Azure Cloud Platform.
 
