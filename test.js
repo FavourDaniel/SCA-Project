@@ -1,34 +1,22 @@
-const http = require('http');
-const app = require('./server');
+const request = require('supertest');
+const app = require('./server'); // import the app object from your server.js file
 
 describe('Server', () => {
-  let server;
-
-  before((done) => {
-    server = app.listen(80, done);
+  beforeAll(async () => {
+    await app.listen(80); // initialize the app object by calling app.listen
   });
 
-  after((done) => {
-    server.close(done);
+  afterAll(async () => {
+    await app.close(); // close the app object after all tests have run
   });
 
-  it('GET / should return status 200', (done) => {
-    http.get('http://localhost:80', (res) => {
-      if (res.statusCode === 200) {
-        done();
-      } else {
-        done(new Error(`Expected status code 200 but received ${res.statusCode}`));
-      }
-    });
+  it('GET / should return status 200', async () => {
+    const res = await request(app).get('/');
+    expect(res.statusCode).toEqual(200);
   });
 
-  it('GET /exists should return status 200', (done) => {
-    http.get('http://localhost:80/exists', (res) => {
-      if (res.statusCode === 200) {
-        done();
-      } else {
-        done(new Error(`Expected status code 200 but received ${res.statusCode}`));
-      }
-    });
+  it('GET /exists should return status 200', async () => {
+    const res = await request(app).get('/exists');
+    expect(res.statusCode).toEqual(200);
   });
 });
