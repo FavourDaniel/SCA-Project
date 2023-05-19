@@ -13,8 +13,7 @@ This project is focused on the containerization and deployment of a container to
 | Docker | Containerizes the Docker Image |
 | Terraform | Automates the provisioning of Infrastructure on Azure |
 | Azure Container Registry (ACR) | Hosts the container image in a repository |
-| Azure Kubernetes Service (AKS) | Enables container execution in the 
-Kubernetes cluster it provides |
+| Azure Kubernetes Service (AKS) | Enables container execution in the Kubernetes cluster it provides |
 | GitHub Actions | Provides workflows that automate the process of building, testing, and deploying code |
 | Azure Monitor | Collects and analyzes telemetry data from Container Insights and Log Analytics |
 | Container Insights | Monitors performance and health of containerized applications within AKS |
