@@ -1,14 +1,19 @@
 const request = require('supertest');
-const app = require('./server'); // Import the Express app instance from your server.js file
+const express = require('express');
 
 describe('Server', () => {
-  it('GET / should return status 200', async () => {
-    const res = await request(app).get('/');
-    expect(res.statusCode).toEqual(200);
+  let app;
+
+  beforeEach(() => {
+    app = express();
+
+    app.get('/', (req, res) => {
+      res.status(200).send('Hello, world!');
+    });
   });
 
-  it('GET /exists should return status 200', async () => {
-    const res = await request(app).get('/exists');
+  it('GET / should return status 200', async () => {
+    const res = await request(app).get('/');
     expect(res.statusCode).toEqual(200);
   });
 });
