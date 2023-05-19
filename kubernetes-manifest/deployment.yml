@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scademo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: scademo
+  template:
+    metadata:
+      labels:
+        app: scademo
+    spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
+      containers:
+      - name: scademo
+        image: scacontainerregistry.azurecr.io/scaproject
+        resources:
+          requests:
+            cpu: 100m 
+            memory: 128Mi
+          limits:
+            cpu: 100m
+            memory: 256Mi
+        ports:
+        - containerPort: 80 
+        env:
+        - name: test
+          value: "scademo"
+        volumeMounts:
+        - mountPath: /app/feedback
+          name: scademo-pvc
+      volumes:
+      - name: scademo-pvc
+        persistentVolumeClaim:
+          claimName: scademo-pvc
