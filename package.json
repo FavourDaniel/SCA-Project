@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "mocha ./test/* --exit"
+    "test": "mocha ./test/* ./test.js --exit"
   },
   "description": ""
 }
