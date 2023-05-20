@@ -33,7 +33,7 @@ Monitoring of the container's performance within AKS is facilitated by `Containe
 
 ## Access the Application
 
-- The application is accessible on this IP Address: `40.88.195.57`
+- The application is accessible on this IP Address: http://40.88.195.57
 
 - Inputed feedbacks are accessible at http://40.88.195.57/feedback/title-of-feedback.txt.
 
