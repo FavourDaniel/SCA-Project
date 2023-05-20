@@ -33,17 +33,17 @@ Monitoring of the container's performance within AKS is facilitated by `Containe
 
 
 
-Application IP Address: 40.88.195.57
+The application is accessible on this IP Address: `40.88.195.57`
 ![Re_ Share some Feedback! - 19 May 2023](https://user-images.githubusercontent.com/59648161/239600716-7bebd81f-c78b-4173-a6f9-d4f8b1fa09be.gif)
 
 ## Setup the Application on your Local
-```
+```jsx
 npm install express
 node server.js
 ```
 
 ## Terraform Commands
-```
+```jsx
 cd terraform-infrastructure
 terraform init
 terraform fmt
