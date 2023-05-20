@@ -18,7 +18,7 @@ This project is focused on the containerization and deployment of a container to
 | GitHub Actions | Provides workflows that automate the process of building, testing, and deploying code |
 | Azure Monitor | Collects and analyzes telemetry data from Container Insights and Log Analytics |
 | Container Insights | Monitors performance and health of containerized applications within AKS |
-| Log Analytics | Provides a centralized storage and management location for log data collected by Azure Monitor and AKS cluster |
+| Log Analytics Workspace | Provides a centralized storage and management location for log data collected by Azure Monitor and AKS cluster |
 
 
 ## Setup the Application on your Local

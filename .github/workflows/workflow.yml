@@ -23,7 +23,7 @@ jobs:
 
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
-
+  
     - name: Login to Azure Container Registry
       uses: Azure/docker-login@v1
       with:

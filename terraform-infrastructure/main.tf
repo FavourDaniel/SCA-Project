@@ -47,14 +47,6 @@ resource "azurerm_kubernetes_cluster" "aks" {
   }
 }
 
-
-# # Create Azure File Share to persist volume from container
-# resource "azurerm_storage_share" "file_share" {
-#   name                 = var.file_share_name
-#   storage_account_name = var.storage_account_name
-#   quota                = var.storage_share_quota
-# }
-
 resource "azurerm_role_assignment" "acrpull_role" {
   scope                            = azurerm_container_registry.scacontainerregistry.id
   role_definition_name             = "AcrPull"
