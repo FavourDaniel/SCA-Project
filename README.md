@@ -31,9 +31,12 @@ Monitoring of the container's performance within AKS is facilitated by `Containe
 | Log Analytics Workspace | Provides a centralized storage and management location for log data collected by Azure Monitor and AKS cluster |
 
 
+## Access the Application
 
+- The application is accessible on this IP Address: `40.88.195.57`
 
-The application is accessible on this IP Address: `40.88.195.57`
+- Inputed feedbacks are accessible at http://40.88.195.57/feedback/nameoffeedback.txt.
+
 ![Re_ Share some Feedback! - 19 May 2023](https://user-images.githubusercontent.com/59648161/239600716-7bebd81f-c78b-4173-a6f9-d4f8b1fa09be.gif)
 
 ## Setup the Application on your Local
