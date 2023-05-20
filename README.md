@@ -20,6 +20,9 @@ This project is focused on the containerization and deployment of a container to
 | Container Insights | Monitors performance and health of containerized applications within AKS |
 | Log Analytics Workspace | Provides a centralized storage and management location for log data collected by Azure Monitor and AKS cluster |
 
+### Architecture Diagram
+![AWS Architecture](https://user-images.githubusercontent.com/89241109/239686349-591da438-259a-497d-a460-474c01fcfed0.png)
+
 
 ## Setup the Application on your Local
 ```
