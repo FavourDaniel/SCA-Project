@@ -35,7 +35,7 @@ Monitoring of the container's performance within AKS is facilitated by `Containe
 
 - The application is accessible on this IP Address: `40.88.195.57`
 
-- Inputed feedbacks are accessible at http://40.88.195.57/feedback/nameoffeedback.txt.
+- Inputed feedbacks are accessible at http://40.88.195.57/feedback/title-of-feedback.txt.
 
 ![Re_ Share some Feedback! - 19 May 2023](https://user-images.githubusercontent.com/59648161/239600716-7bebd81f-c78b-4173-a6f9-d4f8b1fa09be.gif)
 
