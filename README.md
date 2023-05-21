@@ -5,6 +5,7 @@
 This is my project submission for the SCA Cloud School Bootcamp Cohort 4 program.
 
 - Project Documentation
+
 To see complete steps on how this project was built, visit my article on [Deploying your Applications to AKS](https://dev.to/danielfavour/deploy-your-application-to-azure-kubernetes-service-1n9d).
 
 ## Project Overview
