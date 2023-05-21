@@ -44,6 +44,7 @@ Monitoring of the container's performance within AKS is facilitated by `Containe
 By leveraging Azure Monitor, you gain visibility into the current status of your cluster, ensuring effective monitoring and confirming its healthy state. 
 
 This valuable information is collected through the utilization of Container Insights.
+
 ![Screenshot-97](https://user-images.githubusercontent.com/89241109/239716014-6d4c13eb-b344-4144-b09a-113d94aa6746.png)
 
 ### Cluster Metrics
