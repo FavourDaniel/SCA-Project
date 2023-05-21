@@ -40,6 +40,13 @@ Monitoring of the container's performance within AKS is facilitated by `Containe
 
 ![Re_ Share some Feedback! - 19 May 2023](https://user-images.githubusercontent.com/59648161/239600716-7bebd81f-c78b-4173-a6f9-d4f8b1fa09be.gif)
 
+## Monitored Cluster
+This shows that the cluster is currently being monitored
+![Screenshot-97](https://user-images.githubusercontent.com/89241109/239716014-6d4c13eb-b344-4144-b09a-113d94aa6746.png)
+
+### Cluster Metrics
+![Screenshot-98](https://user-images.githubusercontent.com/89241109/239716064-90f7c0d7-5ce2-454c-9e1e-b21eddf5c1cf.png)
+
 ## Setup the Application on your Local
 ```jsx
 npm install express
