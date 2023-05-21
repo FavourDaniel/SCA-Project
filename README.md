@@ -58,7 +58,7 @@ npm install express
 node server.js
 ```
 
-## Terraform Commands
+## Terraform Commands to Setup Infrastructure
 ```jsx
 cd terraform-infrastructure
 terraform init
