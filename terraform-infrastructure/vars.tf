@@ -64,17 +64,3 @@ variable "np_identity" {
 variable "tag" {
   default = "scacluster"
 }
-
-
-
-# variable "file_share_name" {
-#   description = "The name of the file share to create."
-#   default     = "myfileshare"
-#   type        = string
-# }
-
-# variable "storage_share_quota" {
-#   description = "The quota of the storage share in GB"
-#   default     = 50
-#   type        = string
-# }
