@@ -8,7 +8,7 @@ This is my project submission for the SCA Cloud School Bootcamp Cohort 4 program
 This project is focused on the containerization and deployment of a container to Azure Cloud Platform.
 
 ### Architecture Diagram
-![AWS Architecture (1)](https://user-images.githubusercontent.com/89241109/239715500-cc6d1847-1d34-4c31-908e-af0d5d7e7c98.png)
+![AWS Architecture (2)](https://user-images.githubusercontent.com/89241109/239715636-3f882380-dabd-43d3-ab88-bafc3cf065e2.png)
 
 
 The express.js `application code` is written and stored in a `GitHub Repository`. Whenever a push is made to this repository, a CI/CD pipeline, built with `GitHub Actions`, is triggered. This pipeline handles the setup of the project and installs the necessary dependencies. It also builds a `Docker image` using the Dockerfile located in the root directory. Once the Docker image is built, it is pushed to an `Azure Container Registry` (ACR) for hosting.
